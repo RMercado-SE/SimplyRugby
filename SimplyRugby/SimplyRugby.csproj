@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2.gif" />
+    <None Remove="Logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.143" />
+    <PackageReference Include="FakeItEasy" Version="8.0.0-alpha.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0-preview2.23159.1" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="8.0.0-preview.5.23280.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="2.gif" />
+    <Resource Include="Logo.png" />
+  </ItemGroup>
+
+</Project>

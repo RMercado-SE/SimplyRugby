@@ -1,0 +1,61 @@
+﻿<Window x:Class="SimplyRugby.CoachMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby"
+        mc:Ignorable="d"
+        Title="Coach Main Window" Height="550" Width="684" WindowStartupLocation="CenterScreen" Icon="/2.gif">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="152" Margin="254,34,0,0" VerticalAlignment="Top" Width="152" Source="/Logo.png"/>
+        <TextBox x:Name="txtSearchSRUc" HorizontalAlignment="Left" Margin="484,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" TextAlignment="Center"/>
+        <Button x:Name="btnSearchPlayer" Content="Search Player" HorizontalAlignment="Left" Margin="502,147,0,0" VerticalAlignment="Top" Width="120" Click="btnSearchPlayer_Click"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="30,267,0,0" VerticalAlignment="Top"/>
+        <Label Content="DOB" HorizontalAlignment="Left" Margin="37,293,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="484,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.487,0.888"/>
+        <Label Content="Contact Number" HorizontalAlignment="Left" Margin="424,267,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNamec" HorizontalAlignment="Left" Margin="89,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center" IsEnabled="False"/>
+        <TextBox x:Name="txtDOBc" HorizontalAlignment="Left" Margin="89,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center" IsEnabled="False"/>
+        <TextBox x:Name="txtContactNumberc" HorizontalAlignment="Left" Margin="527,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center" IsEnabled="False"/>
+        <TextBox x:Name="txtEmailc" HorizontalAlignment="Left" Margin="527,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="254,279,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAgec" HorizontalAlignment="Left" Margin="300,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" TextAlignment="Center" IsEnabled="False"/>
+        <Button x:Name="btnLogout" Content="Logout" HorizontalAlignment="Left" Margin="597,465,0,0" VerticalAlignment="Top" Width="50" Height="29" Click="btnLogout_Click"/>
+        <Button x:Name="btnModifyPlayerSkills" Content="Modify Player Skills" HorizontalAlignment="Left" Margin="268,217,0,0" VerticalAlignment="Top" Width="124" Height="29" Click="btnModifyPlayerSkills_Click"/>
+        <Button x:Name="btnSquads" Content="Squads" HorizontalAlignment="Left" Margin="537,465,0,0" VerticalAlignment="Top" Width="50" Height="29" Click="btnSquads_Click"/>
+        <Label Content="PASSING" HorizontalAlignment="Left" Margin="548,343,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.338,0.888"/>
+        <Label Content="TACKLING" HorizontalAlignment="Left" Margin="99,343,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.71,0.888"/>
+        <Label Content="KICKING" HorizontalAlignment="Left" Margin="306,343,0,0" VerticalAlignment="Top"/>
+        <Label Content="Standar :" HorizontalAlignment="Left" Margin="500,375,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pop :" HorizontalAlignment="Left" Margin="520,427,0,0" VerticalAlignment="Top"/>
+        <Label Content="Spin :" HorizontalAlignment="Left" Margin="517,401,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtStandar" HorizontalAlignment="Left" Margin="561,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtSpin" HorizontalAlignment="Left" Margin="561,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtPop" HorizontalAlignment="Left" Margin="561,431,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <Label Content="Drop :" HorizontalAlignment="Left" Margin="268,380,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grubber :" HorizontalAlignment="Left" Margin="252,430,0,0" VerticalAlignment="Top"/>
+        <Label Content="Punt :" HorizontalAlignment="Left" Margin="270,406,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.666,0.502"/>
+        <Label Content="Front :" HorizontalAlignment="Left" Margin="66,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.89,0.81"/>
+        <Label Content="Side :" HorizontalAlignment="Left" Margin="74,427,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rear :" HorizontalAlignment="Left" Margin="71,404,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.56,0.733"/>
+        <Label Content="Scrabble :" HorizontalAlignment="Left" Margin="48,453,0,0" VerticalAlignment="Top"/>
+        <Label Content="Goal :" HorizontalAlignment="Left" Margin="271,453,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDrop" HorizontalAlignment="Left" Margin="318,384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtPunt" HorizontalAlignment="Left" Margin="318,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtGrubber" HorizontalAlignment="Left" Margin="318,436,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtFront" HorizontalAlignment="Left" Margin="115,384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtRear" HorizontalAlignment="Left" Margin="115,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtSide" HorizontalAlignment="Left" Margin="115,436,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtScrabble" HorizontalAlignment="Left" Margin="115,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <TextBox x:Name="txtGoal" HorizontalAlignment="Left" Margin="318,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="31" Height="17" TextAlignment="Center"/>
+        <Label Content="COMMENTS :" HorizontalAlignment="Left" Margin="74,34,0,0" VerticalAlignment="Top" Background="{x:Null}" FontWeight="Normal" Foreground="#FFA1ACF3"/>
+        <TextBox x:Name="txtComments" HorizontalAlignment="Left" Margin="38,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Height="143" TextAlignment="Left" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

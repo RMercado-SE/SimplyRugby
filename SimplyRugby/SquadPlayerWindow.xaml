@@ -1,0 +1,34 @@
+﻿<Window x:Class="SimplyRugby.SquadPlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplyRugby"
+        mc:Ignorable="d"
+        Title="Squad Player Window" Height="547" Width="684" WindowStartupLocation="CenterScreen" Icon="/2.gif" Cursor="Hand">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="152" Margin="256,19,0,0" VerticalAlignment="Top" Width="152" Source="/Logo.png">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="btnLogout" Content="Logout" HorizontalAlignment="Left" Margin="508,451,0,0" VerticalAlignment="Top" Width="123" Height="25.28" FontSize="16" Click="btnLogout_Click_1"/>
+        <ListBox x:Name="ListDisplaySquad" Margin="20,207,20,96" FontSize="17" AutomationProperties.IsColumnHeader="True" Cursor="Hand" Background="#FFF4F6F7" FontWeight="Bold"/>
+        <Button x:Name="btn14Squad" Content="14 Squad" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Height="50" Width="67" Click="btn14Squad_Click"/>
+        <Button x:Name="btn15Squad" Content="15 Squad" HorizontalAlignment="Left" Margin="20,85,0,0" VerticalAlignment="Top" Height="50" Width="67" Click="btn15Squad_Click"/>
+        <Button x:Name="btn18Squad" Content="18 Squad" HorizontalAlignment="Left" Margin="102,30,0,0" VerticalAlignment="Top" Height="50" Width="67" Click="btn18Squad_Click"/>
+        <Button x:Name="btn20Squad" Content="20 Squad" HorizontalAlignment="Left" Margin="102,85,0,0" VerticalAlignment="Top" Height="50" Width="67" Click="btn20Squad_Click"/>
+        <Button x:Name="btn16Squad" Content="16 Squad" HorizontalAlignment="Left" Margin="20,141,0,0" VerticalAlignment="Top" Width="67" Height="50" Click="btn16Squad_Click"/>
+        <Button x:Name="btn21Squad" Content="21 Squad" HorizontalAlignment="Left" Margin="102,141,0,0" VerticalAlignment="Top" Height="50" Width="67" Click="btn21Squad_Click"/>
+
+    </Grid>
+</Window>
