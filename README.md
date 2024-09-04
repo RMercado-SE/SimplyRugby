@@ -21,13 +21,20 @@ UI Design: Clean and intuitive interface built using WPF, tailored to the specif
 Project Structure
 
 MainWindow.xaml.cs: Handles the login functionality and navigates users based on their role (coach or secretary).
+
 CoachMainWindow.xaml.cs: Manages the squad selection and viewing of player information for coaches.
+
 SecretaryMainWindow.xaml.cs: Allows secretaries to access and update player data, with specific options related to team administration.
+
 PlayerInfo.cs: The class representing a player's information, including rugby skills, age, and other personal details.
+
 DataAccess.cs: A class responsible for managing data connections, running SQL queries, and interacting with the database to retrieve or update player and squad information.
 
 Technologies Used
 C#: Core programming language used for all backend logic.
+
 WPF (Windows Presentation Foundation): Framework used for creating the graphical user interface.
+
 SQL: Database management system used to store and retrieve player data.
+
 MVVM Design Pattern: Implemented to separate the business logic from the user interface, ensuring modularity and ease of maintenance.
